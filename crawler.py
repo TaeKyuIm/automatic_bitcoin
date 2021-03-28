@@ -7,4 +7,4 @@ driver.get(url)
 html = driver.page_source
 df = pd.read_html(html)
 
-print(df[0])
+print(df[0].dropna(axis=0))
